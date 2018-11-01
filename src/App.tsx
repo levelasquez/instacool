@@ -15,7 +15,7 @@ class App extends React.Component {
           <Title>Iniciar sesión</Title>
           <Input placeholder="Correo" label="Correo" />
           <Input placeholder="Contraseña" label="Contraseña" />
-          <Button>Enviar</Button>
+          <Button block={true}>Enviar</Button>
           <Link>Ir al registro</Link>
         </Card>
       </Container>
