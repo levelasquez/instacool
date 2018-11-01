@@ -7,17 +7,17 @@ import Container from '../../components/Container'
 import Input from '../../components/Input'
 import Title from '../../components/Title'
 
-export default class Login extends React.Component {
+export default class Register extends React.Component {
   public render() {
     return (
       <Container>
         <Card>
-          <Title>Iniciar sesión</Title>
+          <Title>Registro</Title>
           <Input placeholder="Correo" label="Correo" />
           <Input placeholder="Contraseña" label="Contraseña" />
           <Button block={true}>Enviar</Button>
           <Center>
-            <Link to='/register'>Ir al registro</Link>
+            <Link to='/'>Iniciar sesión</Link>
           </Center>
         </Card>
       </Container>
