@@ -1,12 +1,13 @@
-import * as React from 'react';
-import './App.css';
+import * as React from 'react'
+import './App.css'
+import Card from './components/Card'
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <h1>Init project</h1>
-      </div>
+      <Card>
+        lala
+      </Card>
     );
   }
 }
