@@ -13,6 +13,9 @@ export default class NewsFeed extends React.Component {
         <div style={style}>
           <Post image='http://placekitten.com/300/200' />
         </div>
+        <div style={style}>
+          <Post image='http://placekitten.com/300/200' />
+        </div>
       </Container>
     )
   }
