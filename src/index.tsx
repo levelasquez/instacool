@@ -9,10 +9,11 @@ import App from './App'
 import * as reducers from './ducks'
 import './index.css'
 import registerServiceWorker from './registerServiceWorker'
+import services from './services'
 
 const store = createStore(
   combineReducers({ ...reducers }),
-  applyMiddleware(thunk),
+  applyMiddleware(thunk.withExtraArgument(services)),
 )
 
 const history = createHistory()
