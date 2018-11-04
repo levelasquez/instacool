@@ -19,10 +19,6 @@ export default class Container extends React.Component<IContainerProps> {
   public render() {
     const { children, center = false } = this.props
 
-    return (
-      <div style={style(center)}>
-        {children}
-      </div>
-    )
+    return <div style={style(center)}>{children}</div>
   }
 }

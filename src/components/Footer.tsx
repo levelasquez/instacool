@@ -7,7 +7,7 @@ const footerStyle = {
   display: 'flex',
   marginBottom: '-10px',
   marginLeft: '-15px',
-  width: 'calc(100% + 30px)'
+  width: 'calc(100% + 30px)',
 }
 
 const footerButtonsStyle = {

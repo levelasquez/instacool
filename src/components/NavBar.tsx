@@ -9,23 +9,23 @@ const navbar = {
 }
 
 const profile = {
-  float: 'right'
+  float: 'right',
 } as React.CSSProperties
 
 const link = {
- color: '#555',
- textDecoration: 'none',
+  color: '#555',
+  textDecoration: 'none',
 }
 
 export default class NavBar extends React.Component {
   public render() {
     return (
       <div style={navbar}>
-        <Link to='/app/newsfeed' style={link}>
+        <Link to="/app/newsfeed" style={link}>
           <FontAwesomeIcon icon={faNewspaper} /> Instacool
         </Link>
         <div style={profile}>
-          <Link to='/app/profile' style={link}>
+          <Link to="/app/profile" style={link}>
             <FontAwesomeIcon icon={faUser} /> Perfil
           </Link>
         </div>

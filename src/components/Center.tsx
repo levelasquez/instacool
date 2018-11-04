@@ -7,8 +7,6 @@ const style = {
 
 export default class Center extends React.Component {
   public render() {
-    return (
-      <div {...this.props} style={style} />
-    )
+    return <div {...this.props} style={style} />
   }
 }

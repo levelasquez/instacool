@@ -18,8 +18,6 @@ export default class Button extends React.Component<IButton> {
   public render() {
     const { block = false } = this.props
 
-    return (
-      <button {...this.props} style={style(block)} />
-    )
+    return <button {...this.props} style={style(block)} />
   }
 }

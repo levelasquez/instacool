@@ -6,8 +6,6 @@ const style = {
 
 export default class Title extends React.Component {
   public render() {
-    return (
-      <h2 {...this.props} style={style} />
-    )
+    return <h2 {...this.props} style={style} />
   }
 }
