@@ -8,6 +8,10 @@ const style = {
   padding: '10px 15px',
 }
 
+const imageStyle = {
+  width: '300px',
+}
+
 interface IPostProps {
   image: string
 }
@@ -18,7 +22,7 @@ export default class Post extends React.Component<IPostProps> {
 
     return (
       <div style={style}>
-        <img src={image} />
+        <img src={image} style={imageStyle} />
         <Footer />
       </div>
     )
