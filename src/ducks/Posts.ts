@@ -93,3 +93,21 @@ export const fetchPosts = () => async (
     dispatch(fetchError(error))
   }
 }
+
+export const like = (id: string) => async (
+  dispatch: Dispatch,
+  getState: () => any,
+  {  }: IServices,
+) => {
+  // tslint:disable-next-line:no-console
+  console.log(id)
+}
+
+export const share = (id: string) => async (
+  dispatch: Dispatch,
+  getState: () => any,
+  {  }: IServices,
+) => {
+  // tslint:disable-next-line:no-console
+  console.log(id)
+}

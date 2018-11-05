@@ -17,14 +17,21 @@ const footerButtonsStyle = {
   textAlign: 'center',
 } as React.CSSProperties
 
-export default class Footer extends React.Component {
+interface IFooterProps {
+  like: () => void
+  share: () => void
+}
+
+export default class Footer extends React.Component<IFooterProps> {
   public render() {
+    const { like, share } = this.props
+
     return (
       <div style={footerStyle}>
-        <div style={footerButtonsStyle}>
+        <div style={footerButtonsStyle} onClick={like}>
           <FontAwesomeIcon icon={faThumbsUp} /> Like
         </div>
-        <div style={footerButtonsStyle}>
+        <div style={footerButtonsStyle} onClick={share}>
           <FontAwesomeIcon icon={faRetweet} /> Compartir
         </div>
       </div>

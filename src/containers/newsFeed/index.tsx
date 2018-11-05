@@ -8,6 +8,8 @@ import * as postsDuck from '../../ducks/Posts'
 
 interface INewsFeedProps {
   fetchPosts: () => void
+  like: (a: string) => void
+  share: (a: string) => void
   fetched: boolean
   loading: boolean
   data: postsDuck.IDataPosts
@@ -37,12 +39,28 @@ class NewsFeed extends React.Component<INewsFeedProps> {
 
           return (
             <div key={key} style={style}>
-              <Post image={post.imageURL} />
+              <Post
+                image={post.imageURL}
+                like={this.handleLike(key)}
+                share={this.handleShare(key)}
+              />
             </div>
           )
         })}
       </Container>
     )
+  }
+
+  private handleLike = (id: string) => () => {
+    const { like } = this.props
+
+    like(id)
+  }
+
+  private handleShare = (id: string) => () => {
+    const { like } = this.props
+
+    like(id)
   }
 }
 
